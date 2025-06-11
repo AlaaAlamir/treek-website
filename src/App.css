@@ -92,14 +92,14 @@ li {
 
 @font-face {
   font-family: 'Shamel Family Sans One Bold';
-  src: url('./fonts/FFShamelFamily-SansOneBold.ttf') format('truetype');
+  src: url('/fonts/FFShamelFamily-SansOneBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Shamel Family Sans One Book';
-  src: url('./fonts/FFShamelFamily-SansOneBook.ttf') format('truetype');
+  src: url('/fonts/FFShamelFamily-SansOneBook.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
