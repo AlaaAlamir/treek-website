@@ -32,7 +32,378 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  background-color: #f37521;
+  justify-content: space-around;
+}
+
+li {
+  font-size: 18px;
+}
+
+.treek {
+  justify-content: end;
+}
+
+.sections {
+  justify-content: start;
+}
+
+.link {
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+
+.r {
+  height: 500px;
+  align-items: center;
+  padding-right: 100px;
+  direction: rtl;
+}
+
+.rr {
+  direction: rtl;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hello {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  filter: drop-shadow(0px 0px 3px rgb(183, 179, 179));
+}
+
+.treek3d {
+  max-width: 100%;
+  height: auto;
+  padding-left: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Shamel Family Sans One Bold';
+  src: url('./fonts/FFShamelFamily-SansOneBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shamel Family Sans One Book';
+  src: url('./fonts/FFShamelFamily-SansOneBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Shamel Family Sans One Bold', sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.layout-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.p,
+span {
+  font-family: 'Shamel Family Sans One Book', sans-serif;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #11926b;
+  height: fit-content;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.bt {
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  width: 120px;
+  height: 50px;
+  color: #282c34;
+}
+
+.newsletter {
+  padding-right: 30px;
+  padding-top: 30px;
+  justify-content: space-around;
+}
+
+.fo {
+  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.contacts {
+  justify-content: space-between;
+}
+
+.services {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 100px 0;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  height: auto;
+}
+
+/* About us Card*/
+.card-aboutus {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto; 
+  padding: 20px;
+  background: #fff;
+  border: 6px solid #1a469b;
+  box-shadow: 12px 12px 0 #1a469b;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-aboutus:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 17px 17px 0 #112e69;
+  border: 6px solid #112e69;
+}
+
+.card__title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #112e69;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #112e69;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.card-aboutus:hover .card__title::after {
+  transform: translateX(0);
+}
+
+.card__content {
+  direction: rtl;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #112e69;
+  margin-bottom: 20px;
+}
+
+.about-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+
+@keyframes glitch {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+
+.glitch {
+  animation: glitch 0.3s infinite;
+}
+
+/* Services Cards*/
+.card-ser {
+  width: fit-content;
+  border-radius: 20px;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-pic {
+  max-width: 200px;
+  width: fit-content;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #1a469b;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.info {
+  height: fit-content;
+  justify-content: center;
+  justify-self: center;
+  padding-bottom: 30px;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+  font-family: 'Shamel Family Sans One Book', sans-serif;
+  font-weight: bold;
+}
+
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-ser:hover {
+  border-color: #1a469b;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-ser:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+button {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #e8af2a;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #e8af2a;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+button span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+  transition: all 1s;
+}
+
+.portfolio {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.img-fluid {
+  box-shadow: 0px 8px 16px 9px rgb(0 0 0 / 9%);
+}
+
+/* Reservation Page*/
+
+hr {
+  height: 1px;
+  background-color: #fff;
+  border: none;
+}
+
+.card-cart {
+  width: 500px;
+  background: #e8af2a;
+  color: #fff;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #fff;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cart {
+  border-radius: 19px 19px 0px 0px;
 }
